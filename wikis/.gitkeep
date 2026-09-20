@@ -1,0 +1,2 @@
+# Este arquivo garante que a pasta wikis/ exista no repositório,
+# enquanto os arquivos .json gerados em tempo de execução são ignorados pelo .gitignore.

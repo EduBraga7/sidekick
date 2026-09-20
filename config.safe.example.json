@@ -1,0 +1,22 @@
+{
+  "push_to_talk_key": "caps_lock",
+  "preferred_provider": "groq",
+  "groq_api_key": "",
+  "gemini_api_key": "",
+  "voice": "pt-BR-ThalitaMultilingualNeural",
+  "voice_rate": "+5%",
+  "voice_pitch": "+0Hz",
+  "play_chimes": true,
+  "chime_volume": 0.2,
+  "game_profile": "universal",
+  "enable_screen_vision": true,
+  "sentinel_mode_enabled": false,
+  "sentinel_interval_seconds": 25,
+  "anti_cheat_protection": true,
+  "input_method": "windows_hotkey",
+  "enable_overlay": true,
+  "overlay_position": "top_right",
+  "enable_wake_word": false,
+  "wake_word_sensitivity": "media",
+  "personality": "parceira"
+}
