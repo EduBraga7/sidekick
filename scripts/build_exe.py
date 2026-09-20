@@ -12,6 +12,10 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(PROJECT_ROOT)
+
+
 def build_exe():
     """Constrói o executável usando PyInstaller."""
     
@@ -56,8 +60,8 @@ def build_exe():
     if os.path.exists("src/ui/gamepad_icon.ico"):
         pyinstaller_cmd.append("--icon=src/ui/gamepad_icon.ico")
     
-    # Adiciona o script por último
-    pyinstaller_cmd.append("run_gui.py")
+    # Adiciona o script de entrada principal por último
+    pyinstaller_cmd.append("main.py")
     
     print("\n[PYINSTALLER] Executando PyInstaller...")
     print("Comando:", " ".join(pyinstaller_cmd))

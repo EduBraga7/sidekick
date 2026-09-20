@@ -182,15 +182,15 @@ GROQ_API_KEY=gsk_sua_chave_aqui
 
 ## 🎮 Como Iniciar e Usar
 
-### Modo 1: Interface Gráfica Moderna (Recomendado)
+### Modo 1: Interface Gráfica Moderna (Recomendado - Padrão)
 ```powershell
-python run_gui.py
+python main.py
 ```
 *Abre a janela moderna com abas de configurações, logs em tempo real e controle de serviços.*
 
-### Modo 2: Linha de Comando (Console)
+### Modo 2: Linha de Comando (Console / Headless)
 ```powershell
-python run_sidekick.py
+python main.py --cli
 ```
 
 ### Modo 3: Atalho Rápido (.bat)
@@ -261,7 +261,7 @@ Consulte o guia completo em [SETUP_SEGURO.md](SETUP_SEGURO.md).
 Você pode compilar o Sidekick em um executável autônomo de 1 arquivo:
 
 ```powershell
-python build_exe.py
+python scripts/build_exe.py
 ```
 
 O binário final será gerado em: `dist/Sidekick.exe`.
@@ -273,7 +273,7 @@ O binário final será gerado em: `dist/Sidekick.exe`.
 Para executar toda a suíte de testes de integração e componentes:
 
 ```powershell
-python test_sidekick.py
+python tests/test_sidekick.py
 ```
 
 ```

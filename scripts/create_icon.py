@@ -11,8 +11,13 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
 
-def create_icon_file(size=256, output_path="src/ui/gamepad_icon.ico"):
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def create_icon_file(size=256, output_path=None):
     """Cria arquivo .ico com o ícone do gamepad."""
+    if output_path is None:
+        output_path = os.path.join(PROJECT_ROOT, "src", "ui", "gamepad_icon.ico")
     
     # Cria a imagem do ícone
     image = Image.new("RGBA", (size, size), (0, 0, 0, 0))

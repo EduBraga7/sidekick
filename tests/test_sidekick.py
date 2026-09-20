@@ -1,13 +1,18 @@
 """Testes unitários automatizados para o sistema Sidekick."""
 
 import os
+import sys
 import unittest
+
+# Garante que a raiz do projeto esteja no PYTHONPATH
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.audio.chimes import ChimePlayer
 from src.audio.recorder import AudioRecorder
 from src.tts.edge_speaker import clean_text_for_speech
 from src.ai.brain import SidekickBrain
 from src.ai.sidekick_prompt import SIDEKICK_SYSTEM_PROMPT
-from run_sidekick import load_configuration
+from src.app import load_configuration
 
 
 class TestSidekickSuite(unittest.TestCase):
