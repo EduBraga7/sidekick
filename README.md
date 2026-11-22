@@ -32,6 +32,25 @@ O **Sidekick** é um assistente autônomo desenhado para rodar silenciosamente e
 
 ---
 
+## 📸 Capturas de Tela
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/screenshots/01-painel.png" alt="Sidekick — Painel Principal, Status e Console de Atividade" width="100%" />
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/screenshots/02-configuracoes.png" alt="Sidekick — Configurações de Atalhos, Personalidade, Voz Neural e Modo Sentinela" width="100%" />
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="docs/screenshots/03-overlay-hud.png" alt="Sidekick — HUD Overlay Translúcido In-Game" width="480" />
+</p>
+
+---
+
 ## ⚡ 0% de Impacto na Performance do seu PC
 
 * **0% de impacto na sua GPU:** Seus gigabytes de VRAM permanecem 100% dedicados a manter os frames do jogo estáveis.
